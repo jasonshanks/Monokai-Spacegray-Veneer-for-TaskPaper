@@ -74,7 +74,7 @@
 
     <!-- NOTE STYLE -->
     <color id="note" red="0.27" green="0.40" blue="0.55" alpha="1.0" />
-    <font id="note" extendsFontID="base" size="14" />
+    <font id="note" extendsFontID="base" size="15" />
     <paragraphStyle id="note" extendsParagraphStyleID="base" paragraphSpacingBefore="5" paragraphSpacing="5" />
     <characterStyle id="note" fontID="note" foregroundColorID="note" />
     <entryRule matchesQuery="type = note" lineCharacterStyleID="note" paragraphStyleID="note" />
