@@ -1,0 +1,110 @@
+<!-- Monokai Spacegray Veneer-->
+<!-- Version 1.0 : March 1st 2014 -->
+<!-- Wildly interpreted and tamed by [Jason Shanks](http://jasonshanks.com) -->
+<!-- ## Color Influences
+    * Monokai (a by now legendary dark theme with vibrant color highlights by [Wimer Hazenberg](http://www.monokai.nl/blog/2006/07/15/textmate-color-theme/))
+    * An updated interpretation by Daniel Diekmeier called [Monokai Spacegray](https://github.com/danieldiekmeier/Monokai-Spacegray) - a recent Sublime Text theme.
+    * Apple's own Spacegray movement of late (my iPhone color of choice!) although from a cursory search BMW's use of the color term pre-dates this with their 2010 M3.
+-->
+<theme>
+
+    <!-- WINDOW STYLE -->
+    <color id="foreground" red="0.97" green="0.97" blue="0.94" alpha="1.0" />
+    <color id="background" red="0.17" green="0.19" blue="0.23" alpha="1.0" />
+    <window foregroundColorID="foreground" backgroundColorID="background" shouldUseHUDScrollers="yes" />
+
+    <!-- TEXT VIEW STYLE -->
+    <color id="tag" red="0.93" green="0.93" blue="0.93" alpha="0.2" />
+    <color id="handle" red="0.31" green="0.36" blue="0.40 " alpha="1.0" />
+    <color id="insertionPoint" red="1.0" green="1.0" blue="1.0" alpha="1.0" />
+    <color id="selection" red="0.31" green="0.36" blue="0.40 " alpha="0.5" />
+    <font id="base" name="Avenir Next" size="16" />
+    <font id="bolder" name="Avenir Next" size="17" />
+    <characterStyle id="base" fontID="base" foregroundColorID="foreground" />
+    <paragraphStyle id="base" paragraphSpacingBefore="0" paragraphSpacing="0" lineSpacing="0" lineHeightMultiple="1.2" alignment="NSLeftTextAlignment" />
+    <textView
+        shouldAntialiasText="yes"
+        shouldShowNoteHandles="no"
+        shouldShowProjectHandles="yes"
+        defaultCharacterStyleID="base"
+        textLeftEdgeAlignmentStyle="TPEntryAlignProjectsAndTasksAndNotesAlignmentStyle"
+        insertionPointColorID="insertionPoint"
+        selectionColorID="selection"
+        handleColorID="handle"
+        tagColorID="tag"
+    />
+
+    <!-- PROJECT STYLE -->
+    <color id="project" red="0.65" green="0.89" blue="0.18" alpha="0.7" />
+    <font id="project" extendsFontID="base" />
+    <characterStyle id="project" fontID="project" foregroundColorID="project" />
+    <paragraphStyle id="project" extendsParagraphStyleID="base" paragraphSpacingBefore="10" paragraphSpacing="5" />
+    <entryRule matchesQuery="type = &quot;project&quot;" lineCharacterStyleID="project" paragraphStyleID="project" />
+   
+    <!-- PROJECT LEVEL 1 STYLE -->
+    <font id="project1" name="Avenir Next" size="22" />
+    <characterStyle id="project1" fontID="project1" foregroundColorID="project1" />
+    <paragraphStyle id="project1" extendsParagraphStyleID="project" paragraphSpacingBefore="4" />
+    <entryRule matchesQuery="type = &quot;project&quot; and level = 1 -a" lineCharacterStyleID="project1" paragraphStyleID="project1" />
+
+    <!-- PROJECT LEVEL 2 STYLE -->
+    <font id="project2" name="Avenir Next" size="20" />
+    <characterStyle id="project2" fontID="project2" foregroundColorID="project2" />
+    <paragraphStyle id="project2" extendsParagraphStyleID="project" paragraphSpacingBefore="3" />
+    <entryRule matchesQuery="type = &quot;project&quot; and level = 2 -a" lineCharacterStyleID="project2" paragraphStyleID="project2" />
+
+    <!-- PROJECT LEVEL 3 STYLE -->
+    <font id="project3" name="Avenir Next" size="18" />
+    <characterStyle id="project3" fontID="project3" foregroundColorID="project3" />
+    <paragraphStyle id="project3" extendsParagraphStyleID="project" paragraphSpacingBefore="2" />
+    <entryRule matchesQuery="type = &quot;project&quot; and level = 3 -a" lineCharacterStyleID="project3" paragraphStyleID="project3" />
+
+    <!-- GROUPHEADER STYLE (top level projects) -->
+    <color id="groupHeader" red="0.40" green="0.85" blue="0.94" alpha="1.0" />
+    <font id="groupHeader" name="Avenir Next" size="26" />
+    <characterStyle id="groupHeader" fontID="groupHeader" foregroundColorID="groupHeader" />
+    <paragraphStyle id="groupHeader" extendsParagraphStyleID="base" lineHeightMultiple="1.0" paragraphSpacingBefore="30" paragraphSpacing="9" />
+    <entryRule matchesQuery="isgroupheader" paragraphStyleID="groupHeader" lineCharacterStyleID="groupHeader" />
+
+    <!-- TASK STYLE -->
+    <color id="task" extendsColorID="foreground" />
+    <font id="task" extendsFontID="base" />
+    <characterStyle id="task" fontID="task" foregroundColorID="task" />
+    <entryRule matchesQuery="type = task" lineCharacterStyleID="task" paragraphStyleID="base" />
+
+    <!-- NOTE STYLE -->
+    <color id="note" red="0.27" green="0.40" blue="0.55" alpha="1.0" />
+    <font id="note" extendsFontID="base" size="14" />
+    <paragraphStyle id="note" extendsParagraphStyleID="base" paragraphSpacingBefore="5" paragraphSpacing="5" />
+    <characterStyle id="note" fontID="note" foregroundColorID="note" />
+    <entryRule matchesQuery="type = note" lineCharacterStyleID="note" paragraphStyleID="note" />
+
+    <!-- @TAG STYLES --> 
+    
+    <!-- @today --> 
+    <entryRule matchesQuery="@today and not @done"  lineCharacterStyleID="today" />
+        <color id="today" red="0.90" green="0.86" blue="0.45" alpha="1.0" />
+        <characterStyle id="today" fontID="bolder" foregroundColorID="today" />
+
+    <!-- @flag --> 
+    <entryRule matchesQuery="@flag and not @done" lineCharacterStyleID="flag" />
+        <color id="flag" red="0.98" green="0.15" blue="0.45" alpha="1.0" />
+        <characterStyle id="flag" fontID="base" foregroundColorID="flag" />
+ 
+    <!-- @next --> 
+    <entryRule matchesQuery="@next and not @done" lineCharacterStyleID="next" />
+       <color id="next" red="0.99" green="0.59" blue="0.12" alpha="1.0" />
+        <characterStyle id="next" fontID="base" foregroundColorID="next" />
+
+    <!-- @waiting --> 
+    <entryRule matchesQuery="@waiting and not @done" lineCharacterStyleID="waiting" />
+        <color id="waiting" red="0.68" green="0.51" blue="1.0" alpha="0.7" />
+        <characterStyle id="waiting" fontID="base" foregroundColorID="waiting" />
+
+    <!-- @done --> 
+    <entryRule matchesQuery="@done" contentCharacterStyleID="done" />
+        <color id="done" red="0.31" green="0.36" blue="0.40 " alpha="0.7" />
+        <characterStyle id="done"
+        foregroundColorID="done" strikethroughStyle="NSUnderlineStyleSingle" />
+
+</theme>
