@@ -45,7 +45,7 @@ Hopefully you'll find the code minimally documented and clearly organised enough
 Search for any instances of **Avenir Next**. There's a few in case you wanted to get fancy like I did while testing but then ended up streamlining the look in the end. **Helvetica Neue Light** is a trendy choice for top-level headers of late.
 
 ### To change Tags:
-All you need to change is the ```matchesQuery=""```. If you wanted to be thorough and permanent, just be sure to change every other matching tag name in that section.
+All you need to change is the ```matchesQuery=""``` value. If you wanted to be thorough and permanent, just be sure to change every other matching tag name in that section.
 
 ### To add new Tags:
 You can copy and paste an existing Tag section. Change all the tag names. Adjust color/styles as desired.
@@ -54,7 +54,18 @@ Hope you enjoy!
 
 ---
 
-## Todo
+> ### Aside : These Are a Few of My Favourite Scripts
+> Part of the thinking behind the tags and processes I use is influenced by some excellent scripts I rely upon to automate my workflow. These currently include:
+> 
+> * Brett Terpstra's excellent [Log TaskPaper Archives to Day One](http://brettterpstra.com/2012/02/23/log-taskpaper-archives-to-day-one/). With this you can skip the Archive Done Tasks command. It does this, appends a tag with the enclosing Project name (I wish it did all levels of projects in that tree branch —as PlainTasks does [TODO]), moves it to Archive project at bottom of file, logs to Day One app — brilliant, still works a year later!
+> * A few choice ones from [Rob Trew's tree-tools](https://github.com/RobTrew/tree-tools). Mostly TaskPaperViews, although I have these duplicated in TextExpander now.
+> * Pedro Lobo and Phillip Gruneich's powerful [TaskPaper-Actions](https://github.com/pslobo/TaskPaper-Actions)
 
-* add a style for @drafts? - these should be dealt with rather quickly and could do with standing out.
-* reconsider style choice for @next so I don't end up in a sea of orange if I start incorporating these [powerful scripts](https://github.com/pslobo/TaskPaper-Actions).
+---
+
+## TODO
+
+* add a style for @drafts
+    * these should be dealt with rather quickly and could do with standing out.
+* reconsider style choice for @next
+    * I'm ending up with a sea of orange from **TaskPaper-Actions** mentioned above.
