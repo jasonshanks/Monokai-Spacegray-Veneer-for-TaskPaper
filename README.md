@@ -57,7 +57,7 @@ Hope you enjoy!
 > ### Aside : These Are a Few of My Favourite Scripts
 > Part of the thinking behind the tags and processes I use is influenced by some excellent scripts I rely upon to automate my workflow. These currently include:
 > 
-> * Brett Terpstra's excellent [Log TaskPaper Archives to Day One](http://brettterpstra.com/2012/02/23/log-taskpaper-archives-to-day-one/). With this you can skip the Archive Done Tasks command. It does this, appends a tag with the enclosing Project name (I wish it did all levels of projects in that tree branch —as PlainTasks does [TODO]), moves it to Archive project at bottom of file, logs to Day One app — brilliant, still works a year later!
+> * Brett Terpstra's excellent [Log TaskPaper Archives to Day One](http://brettterpstra.com/2012/02/23/log-taskpaper-archives-to-day-one/). With this you can skip the **Archive Done Tasks** command. It appends a tag with the enclosing Project name (I wish it did all levels of projects in that tree branch —as [PlainTasks](https://github.com/aziz/PlainTasks) does [TODO]), moves it to Archive project at bottom of file, logs to [Day One](http://dayoneapp.com) app — brilliant, still works a year later!
 > * A few choice ones from [Rob Trew's tree-tools](https://github.com/RobTrew/tree-tools). Mostly TaskPaperViews, although I have these duplicated in TextExpander now.
 > * Pedro Lobo and Phillip Gruneich's powerful [TaskPaper-Actions](https://github.com/pslobo/TaskPaper-Actions)
 
