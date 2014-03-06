@@ -1,6 +1,8 @@
 Monokai-Spacegray-Veneer-for-TaskPaper
 ======================================
 
+![](screenshot1.png)
+
 This is a new theme for [TaskPaper 2.x](http://www.hogbaysoftware.com/products/taskpaper). It is heavily influenced by variations of Monokai (see details below) and wildly interpreted and tamed by myself. Lately, I've been favouring the font **Avenir Next**  for a clean view of my tasks, but that's easy enough to change to your preferred typeface — although you'll lose half of my double entendre (see what I did there?)
 
 I've already begun adapting this to the upcoming [3.0 version of Taskpaper](http://support.foldingtext.com/discussions/development-versions/94-taskpaper-3-dev-build-123) which will use an entirely different theming structure with a LESS frontend (and shared with FoldingText). I'll release that once the dust settles on development...and I figure it all out!
@@ -21,6 +23,20 @@ It's a simple 3 step  process:
 2. Open TaskPaper and select this new theme that appears under **Theme Options**.
 3. Be more productive in your night and day! — this step not always so simple ;-)
 
+## Styles Supported:
+
+* Group Headers (may ber perceived as Project Level 1 depending on your content)
+* There are 3 levels of Projects, each consecutively smaller in size.
+* Supported tags are:
+    * today
+    * next
+    * flag
+    * waiting
+    * done
+* Notes are dark blue and 1 pt size smaller.
+
+Suggestions welcome here but you can certainly customise your own (see next section). I strive to keep this as minimal as possible to not be too busy or dilute the value of calling attention to important blocks.. 
+
 ## Customisation
 
 Hopefully you'll find the code minimally documented and clearly organised enough to tweak further. Most likely you'll want to customise your own tag names you wish to draw extra attention to (although I think less is more in this regard).
@@ -35,3 +51,10 @@ All you need to change is the ```matchesQuery=""```. If you wanted to be thoroug
 You can copy and paste an existing Tag section. Change all the tag names. Adjust color/styles as desired.
 
 Hope you enjoy!
+
+---
+
+## Todo
+
+* add a style for @drafts? - these should be dealt with rather quickly and could do with standing out.
+* reconsider style choice for @next so I don't end up in a sea of orange if I start incorporating these [powerful scripts](https://github.com/pslobo/TaskPaper-Actions).
